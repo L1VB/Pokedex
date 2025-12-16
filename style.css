@@ -1,0 +1,54 @@
+body, *{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --gap: 1em;
+    --gap2: 2em;
+    --gap4: 4em;
+    --gap8: 8em;
+    --gap16: 16em;
+}
+
+/* page design */
+body{
+    font-family: monospace;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: auto;
+    row-gap: .75em;
+    background-color: whitesmoke;
+}
+section{
+    padding: 0 var(--gap4);
+}
+a{
+    color: whitesmoke;
+}
+
+/* header */
+header{
+    grid-column: 1 / 5;
+    padding: var(--gap2) 0 0;
+}
+header section{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav */
+nav{
+    grid-column: 1 / 5;
+    background-color: rgb(190, 65, 65);
+    padding: .25em 0;
+}
+nav section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* main */
+main{
+    grid-column: 1 / 5;
+}
